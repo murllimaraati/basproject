@@ -1,0 +1,19 @@
+_schema-version: "2.1"
+ID: HersheysHDB
+version: 0.0.1
+modules:
+- name: Herseysdb
+  type: hdb
+  path: Herseysdb
+  requires:
+  - name: hdi_Herseysdb
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+resources:
+- name: hdi_Herseysdb
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      schema: SC_Hersheys
+  properties:
+    hdi-container-name: ${service-name}

@@ -1,0 +1,10 @@
+COLUMN TABLE "SalesOrderHeader" (
+        "RecordMode"    nvarchar(1) PRIMARY KEY,
+        "SalesOrderID"  Integer PRIMARY KEY,
+        "OrderDate"     DATE,
+        "CustomerName"  nvarchar(100),
+        "ProductName"   nvarchar(100),
+        "OrderQuantity" Integer,
+        "Sales"         Decimal(15, 2)
+
+)

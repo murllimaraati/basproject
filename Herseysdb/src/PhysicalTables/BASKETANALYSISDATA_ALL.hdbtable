@@ -1,0 +1,27 @@
+COLUMN TABLE "BASKETANALYSISDATA_ALL" 
+
+("Index" NVARCHAR(400), 
+"ClientID" NVARCHAR(400), 
+"Name" NVARCHAR(400), 
+"Gender" NVARCHAR(400), 
+"Birthdate" DATE, 
+"Occupation" NVARCHAR(400), 
+"City" NVARCHAR(400), 
+"City_" NVARCHAR(400), 
+"latitude" NVARCHAR(400), 
+"longitude" NVARCHAR(400), 
+"OrderID" NVARCHAR(400), 
+"OrderDate" DATE, 
+"OrderYear" INTEGER, 
+"OrderPrice" DECIMAL(10,2), 
+"OrderPay" DECIMAL(10,2), 
+"No.OrderItems" INTEGER, 
+"ProductName" NVARCHAR(400), 
+"ItemCategory" NVARCHAR(400), 
+"ItemPrice" DECIMAL(10,2), 
+"ItemSoldPrice" DECIMAL(10,2), 
+"ItemDiscount" DECIMAL(10,2), 
+"No.Item" INTEGER, 
+"ItemTotalSoldPrice" DECIMAL(10,2))
+
+UNLOAD PRIORITY 5  AUTO MERGE 
